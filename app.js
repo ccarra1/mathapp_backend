@@ -23,6 +23,7 @@ const students = require('./routes/students');
 const instructors = require('./routes/instructors');
 const tests = require('./routes/tests');
 const results = require ('./routes/results');
+const classes = require ('./routes/classes');
 const apptest = require('./routes/apptest');
 const questions = require ('./routes/students');
 const HttpStatus = require('http-status-codes');
