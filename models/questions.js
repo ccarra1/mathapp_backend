@@ -23,6 +23,24 @@ module.exports = (sequelize, type) => {
             autoIncrement: true,
             primaryKey: true
         },
+        
+        // operand1_id: id for the non LEVEL associated operand
+        operand1_id: {
+        	type: Sequelize.INTEGER,
+        	references: {
+        		model: 'operand',
+        		key: 'id',
+        	}
+        }
+        
+        // level_id: id for the LEVEL (contains operation and second operand
+        level_id: {
+        	type: Sequelize.INTEGER,
+        	references: {
+        		model: 'level',
+        		key: 'id',
+        	}
+        }
 
         // implement a data field to store data for testing get/post
         data: Sequelize.TEXT
