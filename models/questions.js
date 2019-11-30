@@ -31,7 +31,7 @@ module.exports = (sequelize, type) => {
         		model: 'operand',
         		key: 'id',
         	}
-        }
+        },
         
         // level_id: id for the LEVEL (contains operation and second operand
         level_id: {
@@ -40,7 +40,7 @@ module.exports = (sequelize, type) => {
         		model: 'level',
         		key: 'id',
         	}
-        }
+        },
 
         // implement a data field to store data for testing get/post
         data: Sequelize.TEXT
