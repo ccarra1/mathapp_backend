@@ -12,13 +12,8 @@
     Proprietary and confidential
 */
 
-
-class Attempt_Answers extends Model {}
-Attempt_Answers.init({
-	student_answer: Sequelize.INTEGER
-	correct: Sequelize.INTEGER
-}, {
-	sequelize, 
-	modelName: ‘attempt_answers’ 
+var _q = Test;
+_q.findAll({
+attributes: [['student_id', 'student_id']],
+where: {[Op.and]: [{teacher_id: {[Op.eq]: 1}}, {timestamp: {[Op.eq]: 2019-12-2}}]},
 });
-Attempt_Answers.belongsTo(Question);
